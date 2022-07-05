@@ -5,6 +5,7 @@
     
   <meta charset="UTF-8" />
   <title>Budget Breaker</title>
+
 </head>
   
 <body>
@@ -16,13 +17,13 @@
     </h2>
     <br />
     <section>
-        <input type="text" placeholder="Income">
-        <input type="text" placeholder="Expense 1">
-        <input type="text" placeholder="Expense 2">
-        <input type="text" placeholder="Expense 3">
-        <input type="text" placeholder="Expense 4">
+        <input id="income" type="text" placeholder="Income">
+        <input id="exp1" type="text" placeholder="Expense 1">
+        <input id="exp2" type="text" placeholder="Expense 2">
+        <input id="exp3" type="text" placeholder="Expense 3">
+        <input id="exp4" type="text" placeholder="Expense 4">
         <button type="button">Add Expense</button>
-        <button type="button">Calculate Budget</button>
+        <button id="submitBtn" type="button">Calculate Budget</button>
     </section>
     <div></div>
   
@@ -108,6 +109,7 @@
             </tr>
         </tbody>
     </table>
+    <script src="./assets/script.js"></script>
 </body>
   
 </html>
