@@ -4,7 +4,10 @@ const getExp2 = document.querySelector("#exp2");
 const getExp3 = document.querySelector("#exp3");
 const getExp4 = document.querySelector("#exp4");
 
-const submitBtn = document.querySelector("#submitBtn")
+const submitBtn = document.querySelector("#submitBtn");
+const addBtn = document.querySelector("#addBtn");
+
+
 
 submitBtn.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -16,7 +19,24 @@ submitBtn.addEventListener("click", function() {
     localStorage.setItem("userExp2", getExp2.value);
     localStorage.setItem("userExp3", getExp3.value);
     localStorage.setItem("userExp4", getExp4.value);
-    if (localStorage.key = false) {
-        localStorage.key = 0;
-    }
+});
+$(document).ready(function(){
+    var maxField = 10;
+    var addButton = $('.add_button');
+    var wrapper = $('.field_wrapper');
+    var fieldHTML = '<div><input id="exp[]" type="text" placeholder="Expense[]"/><a href="javascript:void(0);" class="remove_button"><img src="remove-icon.png"/></a></div>';
+    var x = 1;
+    
+    $(addButton).click(function(){
+        if(x < maxField){ 
+            x++;
+            $(wrapper).append(fieldHTML);
+        }
+    });
+    
+    $(wrapper).on('click', '.remove_button', function(e){
+        e.preventDefault();
+        $(this).parent('div').remove();
+        x--;
+    });
 });

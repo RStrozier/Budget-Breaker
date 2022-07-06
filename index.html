@@ -5,7 +5,7 @@
     
   <meta charset="UTF-8" />
   <title>Budget Breaker</title>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
   
 <body>
@@ -22,10 +22,15 @@
         <input id="exp2" type="text" placeholder="Expense 2">
         <input id="exp3" type="text" placeholder="Expense 3">
         <input id="exp4" type="text" placeholder="Expense 4">
-        <button type="button">Add Expense</button>
+        <div class="field_wrapper">
+            <div>
+                <a href="javascript:void(0);" class="add_button" title="Add field"><button id="addBtn" type="button">Add Expense</button></a>
+            </div>
+        </div>
+        
         <button id="submitBtn" type="button">Calculate Budget</button>
     </section>
-    <div></div>
+    
   
     <table bgcolor="lightgrey" align="center" 
         cellspacing="21" cellpadding="21">
