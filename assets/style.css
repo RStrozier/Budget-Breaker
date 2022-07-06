@@ -7,14 +7,32 @@ h1 {
     color: antiquewhite;
     font-size: xx-large;
     font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px;
 }
 
 h2 {
+    padding-top: 50px;
     text-align: center;
     color: antiquewhite;
+    text-decoration: underline;
 }
 
 section {
+    padding-left: 200px;
+}
+
+button {
+    padding: 25px;
+    margin: auto;
+    display: inline;
+    grid-row: 1 / 2;
+}
+
+#income, #exp1, #exp2, #exp3, #exp4 {
+    padding: 15px;
     display: grid;
-    padding: 50px;  
+    padding: 10px; 
+    margin: 25px; 
+    width: 425px;
 }
