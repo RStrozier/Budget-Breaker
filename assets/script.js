@@ -3,7 +3,7 @@ const getExp1 = document.querySelector("#exp1");
 const getExp2 = document.querySelector("#exp2");
 const getExp3 = document.querySelector("#exp3");
 const getExp4 = document.querySelector("#exp4");
-
+const calendar = document.querySelector("#calendar")
 const submitBtn = document.querySelector("#submitBtn")
 
 submitBtn.addEventListener("submit", function (e) {
@@ -19,4 +19,4 @@ submitBtn.addEventListener("click", function() {
     if (localStorage.key = false) {
         localStorage.key = 0;
     }
-});
+});  
