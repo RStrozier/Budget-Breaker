@@ -24,13 +24,19 @@ $(document).ready(function(){
     var maxField = 10;
     var addButton = $('.add_button');
     var wrapper = $('.field_wrapper');
-    var fieldHTML = '<div><input id="exp[]" type="text" placeholder="Expense[]"/><a href="javascript:void(0);" class="remove_button"><img src="remove-icon.png"/></a></div>';
+    var fieldHTML = '<div><input class="dynExp" type="text" /><a href="javascript:void(0);" class="remove_button"><img src="remove-icon.png"/></a></div>';
     var x = 1;
     
     $(addButton).click(function(){
         if(x < maxField){ 
             x++;
+            var expNum = 4;
             $(wrapper).append(fieldHTML);
+            $(".dynExp").each(function(){
+                expNum++;
+                $(this).attr("id", "exp" + expNum);
+                $(this).attr("placeholder", "Expense" + expNum);
+            });
         }
     });
     
@@ -39,4 +45,5 @@ $(document).ready(function(){
         $(this).parent('div').remove();
         x--;
     });
+    
 });
