@@ -1,8 +1,4 @@
 const getIncome = document.querySelector("#income");
-// const getExp1 = document.querySelector("#exp1");
-// const getExp2 = document.querySelector("#exp2");
-// const getExp3 = document.querySelector("#exp3");
-// const getExp4 = document.querySelector("#exp4");
 var expArr = new Array();
 
 const submitBtn = document.querySelector("#submitBtn");
@@ -20,14 +16,8 @@ const getValueInput = (myIndex) =>{
 };
 
 submitBtn.addEventListener("click", function() {
+    expArr = [];
     localStorage.setItem("userIncome", getIncome.value);
-    // localStorage.setItem("userExp1", getExp1.value);
-    // localStorage.setItem("userExp2", getExp2.value);
-    // localStorage.setItem("userExp3", getExp3.value);
-    // localStorage.setItem("userExp4", getExp4.value);
-
-
-
 
     var exp = Array.prototype.slice.call(document.getElementsByClassName("dynExp"));
     console.log(exp);
@@ -40,7 +30,12 @@ submitBtn.addEventListener("click", function() {
 
     console.log(expArr);
 
-    localStorage.setItem("userExpense", expArr);
+    if (localStorage.getItem("userExpense") === null) {
+        localStorage.setItem("userExpense", expArr);
+    } else if (localStorage.getItem("userExpense") !== expArr) {
+        localStorage.removeItem("userExpense");
+        localStorage.setItem("userExpense", expArr);
+    };
 });
 
 
@@ -62,7 +57,7 @@ $(document).ready(function(){
                 $(this).attr("id", "exp" + expNum);
                 $(this).attr("placeholder", "Expense" + expNum);
             });
-        }
+        };
     });
     
     $(wrapper).on('click', '.remove_button', function(e){
