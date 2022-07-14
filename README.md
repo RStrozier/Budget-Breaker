@@ -14,6 +14,7 @@ After hitting the "Add Expense" button user can add multiple expenses in seperat
 Answers logged by the user are sent to local storage after hitting the "Calculate Expense" button.
 Users have the option to remove expenses written usng dynamic JavaScript.
 Allows users to interact with Yahoo Finance S&P 500 after typing in appropriate stock symbol status. 
+This Yahoo Finance S&P is updated live in real time through a server-side API using fetch request in Javascript. 
 
 Future Development Projects Include:
 Making changes by outside of current month.
