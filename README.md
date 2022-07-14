@@ -9,6 +9,7 @@ Budget Breaker Description:
 A dynamic budget calculator that computes user's income, and allows users to enter in detailed information to show their suggested budget based on user input.
 
 This application allows inputs of income and a multiple array of expenses using dynamic JavaScript. 
+After hitting the "Add Expense" button user can add multiple expenses in seperate line forms.
 Answers logged by the user are sent to local storage after hitting the "Calculate Expense" button.
 Users have the option to remove expenses written usng dynamic JavaScript.
 
