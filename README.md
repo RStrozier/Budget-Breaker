@@ -1,9 +1,9 @@
 Used Languages:
-HTML, CSS, JavaScript, Tailwind CSS, and Node.JS
-Includes two google font API's
-Includes Yahoo Finance S&P 500 stock API server
+HTML, CSS, JavaScript, Tailwind CSS, and Node.JS.
+Includes two google font API's.
+Includes Yahoo Finance S&P 500 stock API server.
 
-Contributors:
+Appplication Contributors:
 Rashida Strozier, Isaac Methner, Keegan Houghten, and Quinten Holman 
 
 Budget Breaker Description:
