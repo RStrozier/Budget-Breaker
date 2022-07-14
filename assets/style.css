@@ -68,6 +68,7 @@ margin: 5px;
 section {
   padding-left: 200px;
   margin: 25px;
+  padding-bottom: 200px;
 }
 
 #addBtn, #submitBtn {
