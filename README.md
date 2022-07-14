@@ -14,7 +14,7 @@ Answers logged by the user are sent to local storage after hitting the "Calculat
 Users have the option to remove expenses written usng dynamic JavaScript.
 
 Future Development Projects Include:
-Making changes by outside of current month
-Ability to make yearly calculation
+Making changes by outside of current month.
+Software ability to make yearly calculations.
 
 There are no current known bugs in file. 
